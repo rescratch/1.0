@@ -1,5 +1,3 @@
-
-
 # ReScratch 1.0
 Hello, hello.  
 This is Scratch 1.0.
