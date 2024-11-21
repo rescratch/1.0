@@ -1,4 +1,4 @@
-![RESCRATCH-11-20-2024](https://github.com/user-attachments/assets/8032ed62-d0ff-45fe-9e15-b44dfb8a175b)
+![ReScratch Logo](static/images/main/logo.png)
 # ReScratch 1.0
 Hello, hello.  
 This is Scratch 1.0.
