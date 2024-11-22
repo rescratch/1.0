@@ -10,4 +10,4 @@
  - [x] Early Development Screen
  - [ ] Get font uploaded
  - [ ] Use logo in early screen
- - [ ] Make a "/beta" folder for curious ones
+ - [x] Make a "/beta" folder for curious ones
