@@ -1,4 +1,4 @@
-![ReScratch Logo](static/images/main/logo.png)
+![ReScratch Logo](static/img/main/logo.png)
 # ReScratch 1.0
 Hello, hello.  
 This is Scratch 1.0.
