@@ -43,3 +43,9 @@ svgRenderer.loadSVG(svgData, quirksMode, () => {
     doSomethingWith(svgRenderer.canvas);
 });
 vm.start();
+
+function loadFile() {
+    vm.loadProject(fs.readFileSync(filePath));
+}
+
+loadFile();
