@@ -14,7 +14,7 @@ if (supported) {
 
 async function openFile() {
   try {
-    const blobs = await fileOpen([
+    const blob = await fileOpen([
       {
         description: 'ReScratch Project',
         mimeTypes: ['application/zip'],
@@ -29,7 +29,14 @@ async function openFile() {
       },
     ]);
 
-      console.log(`Selected file: ${blobs.name}`);
+    console.log(`Selected file: ${blob.name}`);
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const fileContent = event.target.result;
+      console.log(fileContent);
+    };
+    reader.readAsText(file);
+    vm.loadProject(fileContent);
 
   } catch (error) {
     console.error('Error opening file(s):', error);
