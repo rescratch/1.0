@@ -32,4 +32,15 @@ storage.addWebStore(
 
 vm.attachStorage(storage);
 drawStep();
+const svgRenderer = new SvgRenderer();
+
+const svgData = "<svg>...</svg>";
+const scale = 1;
+const quirksMode = false; // If true, emulate Scratch 2.0 SVG rendering "quirks"
+function doSomethingWith(canvas) {...};
+
+svgRenderer.loadSVG(svgData, quirksMode, () => {
+    svgRenderer.draw(scale);
+    doSomethingWith(svgRenderer.canvas);
+});
 vm.start();
