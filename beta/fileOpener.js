@@ -33,9 +33,7 @@ async function openFile() {
     const reader = new FileReader();
     reader.onload = (event) => {
       const fileContent = event.target.result;
-      console.log(fileContent);
     };
-    reader.readAsText(file);
     vm.loadProject(fileContent);
 
   } catch (error) {
