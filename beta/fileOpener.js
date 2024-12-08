@@ -33,8 +33,8 @@ async function openFile() {
     const reader = new FileReader();
     reader.onload = (event) => {
       const fileContent = event.target.result;
+      vm.loadProject(fileContent);
     };
-    vm.loadProject(fileContent);
 
   } catch (error) {
     console.error('Error opening file(s):', error);
